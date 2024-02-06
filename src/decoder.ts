@@ -15,8 +15,8 @@ export async function decode(code: string) {
     console.log("🚀 [decoder] message = ", message) // @FIXME: Remove this line written on 2024-02-06 at 17:27
     const { secret } = message.otpParameters[0]
     console.log("🚀 [decoder] secret = ", secret) // @FIXME: Remove this line written on 2024-02-06 at 18:10
-    const secretB32 = base32.encode(secret)
-    console.log("🚀 [decoder] secret (Base32) = ", secretB32) // @FIXME: Remove this line written on 2024-02-06 at 18:05
+    const secretB32 = base32.encode(secret).toUpperCase()
+    console.log(secretB32.substring(1)) // @FIXME: Remove this line written on 2024-02-06 at 18:05
 }
 
 interface Message {
