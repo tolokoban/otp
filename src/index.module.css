@@ -1,0 +1,19 @@
+body {
+    background: #333;
+    color: #ddd;
+    font-size: 5vmin;
+}
+
+input,
+button {
+    border: none;
+    font: inherit;
+    margin: 0.25em;
+}
+
+input {
+    padding: 0.5em;
+    background-color: #aaa;
+    color: #000;
+    border: 1px solid #000;
+}
